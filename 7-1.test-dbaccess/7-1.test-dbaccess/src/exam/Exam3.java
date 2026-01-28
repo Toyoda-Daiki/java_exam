@@ -29,7 +29,7 @@ public class Exam3 {
 			con = DriverManager.getConnection(url, user, password);
 
 			// (2)SQL文を作成
-			sql = "SELECT m.id, m.name, m.age, d.name AS dep_name FROM test_members m JOIN test_deps d ON m.dep_id = d.id";
+			sql = "SELECT m.id, m.name, m.age, d.name AS dep_name FROM test_members AS m INNER JOIN test_deps AS d ON m.dep_id = d.id";
 
 			// (3)SQL実行準備
 			pstmt = con.prepareStatement(sql);
@@ -42,7 +42,7 @@ public class Exam3 {
 				int id = rs.getInt("m.id");
 				String name = rs.getString("m.name");
 				int age = rs.getInt("m.age");
-				String dep_name = rs.getString("d.dep_name");
+				String dep_name = rs.getString("dep_name");
 
 				System.out.print("id : " + id);
 				System.out.print("name :" + name);
