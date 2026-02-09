@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>問題5　レイアウト作成</title>
+  <style>
+    body {
+      width: 100vw;
+      margin: 0 auto;
+    }
+
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    p {
+      /* display: flex; */
+      margin: 0 auto;
+      text-align: center;
+      height: max-content;
+    }
+
+    header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 20vh;
+      background-color: aquamarine;
+    }
+
+    main {
+      display: flex;
+      height: 60vh;
+    }
+
+    main .menu,
+    main .banner {
+      background-color: cadetblue;
+      width: 20vw;
+    }
+
+    main .mainCon {
+      width: 60vw;
+      background-color: cornflowerblue;
+    }
+
+    footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 20vh;
+      background-color: aquamarine;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <p>ヘッダー</p>
+  </header>
+  <main>
+    <div class="menu">
+      <p>メニュー</p>
+    </div>
+    <div class="mainCon">
+      <p>メインコンテンツ</p>
+    </div>
+    <div class="banner">
+      <p>広告枠</p>
+    </div>
+  </main>
+  <footer>
+    <p>フッター</p>
+  </footer>
+</body>
+
+</html>
