@@ -1,0 +1,14 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-TestSpringMvcToyodaApplication<test-spring-mvc-toyoda>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.example.test_spring_mvc_toyoda.TestSpringMvcToyodaApplication",
+      "projectName": "test-spring-mvc-toyoda",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}

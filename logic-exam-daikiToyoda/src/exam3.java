@@ -4,7 +4,7 @@ public class exam3 {
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
 
-    int year = (101);
+    int year = (2001);
 
     int century = (year - 1) / 100 + 1;
 

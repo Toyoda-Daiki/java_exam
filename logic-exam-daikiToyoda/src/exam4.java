@@ -1,6 +1,6 @@
 public class exam4 {
   public static void main(String[] args) {
-    int year = 2100;
+    int year = 2000;
 
     System.out.println("==================");
     if (isLeapYear(year)) {
